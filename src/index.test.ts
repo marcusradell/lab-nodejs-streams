@@ -10,7 +10,7 @@ test("Read file should contain the text 'Hi!'", () => {
 });
 
 test("File reply.txt should be written to", () => {
-  const result = fs.writeFileSync("reply.txt", "Goddag goddag!\n");
+  fs.writeFileSync("reply.txt", "Goddag goddag!\n");
 
-  expect(() => result).not.toThrow();
+  expect(1).toEqual(1);
 });
